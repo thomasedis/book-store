@@ -1,0 +1,32 @@
+extends ../layout/common
+block header
+    .container.container-books
+        .books-header
+            .books-header-left
+                h1 Books
+                p Showing 1-12 of 13 results
+            .books-header-right
+                .dropdown
+                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Sắp xếp theo
+                    .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                        a.dropdown-item(href='#') Action
+                        a.dropdown-item(href='#') Another action
+                        a.dropdown-item(href='#') Something else here
+
+    
+        .row
+            .col-3.books-left
+                .books-left-content   
+                .books-left-seller
+                    h2 Bestsellers
+                    .books-left-seller-content
+            .col-9.books-right
+                .row.books-right-content-row
+                    .card.col-4(style='width: 18rem;')
+                        img.card-img-top(src="https://loremflickr.com/320/400", alt='...')
+                        .card-body.card-body-custom
+                            h5.card-title Card title
+                            p Tac gia
+                            p 110.000đ
+                            a.btn.btn-primary(href='#') Add cart
+                    

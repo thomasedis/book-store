@@ -1,0 +1,194 @@
+.container-header-grid {
+    background-color: #C8BCA7 !important;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-logo {}
+
+.menu-main {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+
+.menu-main-active a {
+    background-color: rgba(190, 175, 148, 01);
+}
+
+.menu-main a {
+    color: #222;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    font-size: 1.6rem;
+}
+
+.menu-main a:hover {
+    color: white;
+}
+
+.header-search {
+    position: absolute;
+    right: 0;
+}
+
+.header-search form input,
+.header-search form button {
+    font-size: 1.6rem;
+}
+
+
+/* Back ground */
+
+.container-image-grid {
+    height: 500px;
+    background-image: url('/image/background.jpg');
+    position: relative;
+}
+
+.content-image {
+    height: 100px;
+    background: rgb(210, 42, 48);
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 200px;
+    border-radius: 3px;
+    animation: content-image linear 0.5s;
+}
+
+@keyframes content-image {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.content-image h1 {
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.content-image h1 sub {
+    font-size: 1rem;
+}
+
+
+/* BOOKS */
+
+.books-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.books-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.books-header-left h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.books-header-left p {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+.books-header-right button {
+    font-size: 1.6rem;
+}
+
+
+/* book left */
+
+.books-left-seller {
+    border: 1px solid rgb(207, 207, 207);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.books-left-seller h2 {
+    left: 0;
+    font-weight: 400;
+    color: #999;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.books-left-seller h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid #dedede;
+    top: 180%;
+    left: 0%;
+}
+
+.books-left-seller-content {
+    background-color: rgb(185, 185, 185);
+    height: 400px;
+}
+
+
+/* book-right */
+
+.books-right {
+    border: 1px solid #999;
+}
+
+.books-right-content-row {
+    padding: 10px 0;
+}
+
+.card-body-custom {
+    font-size: 1.6rem;
+}
+
+.card-body-custom h5 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.card-body-custom p {
+    margin: 0;
+}
+
+.card-body-custom p:last-of-type {
+    margin: 10px 0;
+}
+
+.card-body-custom a {
+    font-size: 1.7rem;
+}
+
+.card.col-4 {
+    border: none;
+}
+
+.card.col-4:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    transition: all 0.2s;
+}
