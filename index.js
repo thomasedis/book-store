@@ -11,4 +11,4 @@ app.get('/', (req, res) => res.render('index'))
 app.use('/books', bookRoute)
 
 
-app.listen(port, () => console.log(`BookStore listening on port ${port}!`))
+app.listen(process.env.PORT || port, () => console.log(`BookStore listening on port ${port}!`))
